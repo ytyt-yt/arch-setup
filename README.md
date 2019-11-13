@@ -25,7 +25,8 @@ EDITOR=nano visudo
 
 ### config bash
 ```
-$ sudo pacman -S bash-completion autojump
+$ sudo pacman -S bash-completion pkgfile autojump
+$ sudo pkgfile -u
 ```
 sync `.bashrc`
 
