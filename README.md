@@ -10,9 +10,11 @@
   * if share EFI partition:
     * Option 1: mount to `/boot/efi/` and add [systemd hook](https://wiki.archlinux.org/index.php/EFI_system_partition#Using_systemd) 
     * Option 2: [XBOOTLDR](https://wiki.archlinux.org/title/Systemd-boot#Installation_using_XBOOTLDR) (EFI partition might be small)
-      * `/boot`: Type: "Linux extended boot" (`bc13c2ff-59e6-4262-a352-b275fd6f7172`), **FAT32** (`mkfs.vfat -F 32 xxx`, ext4 won't work)
+      * `/boot`
+        * type: "Linux extended boot" (`bc13c2ff-59e6-4262-a352-b275fd6f7172`)
+        *  **FAT32** (`mkfs.vfat -F 32 xxx`, ext4 won't work)
       * mount EFI to `/efi`
-      * add arch.conf to `boot/loader/entries/*.conf`
+      * add arch.conf to `/boot/loader/entries/*.conf`
       * update `/efi/loader/loader.conf`
 * [UTC in Windows](https://wiki.archlinux.org/index.php/Time#Time_standard)
 * Enable [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd)
