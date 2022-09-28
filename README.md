@@ -17,7 +17,7 @@
       * add arch.conf to `/boot/loader/entries/*.conf`
       * update `/efi/loader/loader.conf`
 * [UTC in Windows](https://wiki.archlinux.org/index.php/Time#Time_standard)
-* Enable [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd)
+* Network: Install [NetworkManager](https://wiki.archlinux.org/title/NetworkManager) or Enable [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd)
 
 ## Post-installation
 
